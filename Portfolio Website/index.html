@@ -4,41 +4,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <style>
       body{
-        font-family: 'Caveat';
+        font-family: 'Oswald';
         font-size: x-large;
       }
     </style>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- start the navbar section -->
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark" >
+    <nav class="navbar navbar-expand-lg bg-dark bg-gradient fixed-top p-0" data-bs-theme="dark" >
       <div class="container">
         <a class="navbar-brand" href="#">
            <img class="img-fluid pe-3" src="./media/logo-transparent.png" alt=""> 
-           N-B Technology
+           Nate Borais
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 ">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">| Home |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#">| Projects |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">| Contact |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tools</a>
+              <a class="nav-link" href="#">| Tools |</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -53,20 +62,78 @@
     <!-- Nav Bar -->
 
     <!-- Main Content start -->
+    <!-- self portrait plus self info -->
     <div class="container-fluid text-center">
-      <div class="row">
-        <div class="card ">
-
+      <div class="row bg-light bg-gradient justify-content-center align-items-center py-4 mt-5 min-vh-100">
+        
+        <div class="col-10 col-md-3 p-4">
+          <img src="./media/albert-einstein-1100450_640.png" class="rounded-circle border border-dark img-fluid" data-aos="flip-left">
         </div>  
+        <div class="col-md-7 col-lg-5 text-dark">
+          <h1 class="mt-4 text-center text-md-start text-info">Hello!</h1>
+          <h4 class="text-center text-md-start">// I'm Nathaniel Borais </h2>
+          <p class="text-center text-md-start">// A full-stack developer from Manila, Ph. </p>
+          <p class="text-center text-md-start">// Feel free to check out my:</p>
+          <ul class="text-center list-unstyled text-md-start ms-md-5">
+            <li>
+              <a href="#myProjects"><i class="bi bi-robot pe-3"></i>Projects</a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-tools pe-3"></i>Tools</a>
+            </li>
+            <li>
+              <p><a href=""><i class="bi bi-mailbox2-flag pe-3"></i></a>And <a href="">Contact</a> me on my Socials! </p>
+            </li>
+          </ul>
+        </div>
       </div>
-
-
-
+    </div>
+    
+    <!-- PROJECTS START -->
+    <div class="container-fluid bg-dark text-light pt-4 px-0 mx-0">
+      <h1 class="text-center mt-4" id="myProjects">Projects</h1>
+      <div>
+        <div class="row justify-content-center">
+          <div class="card col-10 col-md-3 my-5 bg-dark">
+            <img src="./media/food-tracker.png" class="card-img-top" alt="...">
+            <div class="card-body text-light bg-secondary">
+              <h3 class="card-title fw-bolder text-center">DIET TRACKER</h5>
+              <p class="card-text text-justify">A diet tracker website is a user-friendly online platform designed to help individuals monitor and manage their dietary habits. With features like food logging, nutrient tracking, and personalized goal setting, users can easily track their daily intake, make informed choices, and work towards achieving their health and fitness goals.
+              </p>
+            </div>
+          </div>
+          <div class="card col-10 col-md-3 my-5 bg-dark" >
+            <img src="./media/inventory-management-software.png" class="card-img-top" alt="...">
+            <div class="card-body text-light bg-secondary">
+              <h3 class="card-title fw-bolder text-center">Inventory Management System</h5>
+              <p class="card-text text-justify">An inventory management website is a streamlined online platform designed to efficiently track, organize, and manage inventory for businesses. With user-friendly interfaces and robust features, the website allows businesses to monitor stock levels, track product movements, and streamline order fulfillment. 
+              </p>
+            </div>
+          </div>
+          <div class="card col-10 col-md-3 my-5 bg-dark" >
+            <img src="./media/Password-manager.png" class="card-img-top" alt="...">
+            <div class="card-body text-light bg-secondary">
+              <h3 class="card-title fw-bolder text-center">Password Manager</h5>
+              <p class="card-text text-justify">A password manager is a secure and convenient solution for organizing and safeguarding your online credentials. This software securely stores and encrypts passwords, ensuring that users only need to remember a single master password to access all their accounts.  
+              </p>
+            </div>
+        </div>
+      </div>
     </div>
 
+    <!-- TOOLS START -->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- CONTACT START -->
+
+
+    <!-- FOOTER START -->
+    <footer class="container-fluid d-flex justify-content-between align-items-center text-center text-light bg-dark bg-gradient">
+      <p class="fs-6 fs-md-2 mt-2">Nathaniel Borais || Full-Stack Dev</p>
+      <p class="fs-6 mt-2 d-none d-md-block">"Digital design is like painting, except the paint never dries."</p>
+      <p class="fs-6 fs-md-2 mt-2">© All Rights Reserved 2024</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
