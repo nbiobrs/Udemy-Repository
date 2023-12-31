@@ -28,9 +28,8 @@
     <!-- start the navbar section -->
     <nav class="navbar navbar-expand-lg bg-dark bg-gradient fixed-top p-0" data-bs-theme="dark" >
       <div class="container">
-        <a class="navbar-brand" href="#">
-           <img class="img-fluid pe-3" src="./media/logo-transparent.png" alt=""> 
-           Nate Borais
+        <a class="navbar-brand" href="#landing">
+           <img class="img-fluid rounded-circle hover-effect" src="./media/logo-transparent.png" alt=""> 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,19 +37,19 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">| Home |</a>
+              <a class="nav-link" href="#landing">| Home |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">| Projects |</a>
+              <a class="nav-link" href="#projects">| Projects |</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">| Contact |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">| Tools |</a>
+              <a class="nav-link" href="#tools">| Tools |</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-flex mb-3 mb-md-0" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
@@ -63,57 +62,90 @@
 
     <!-- Main Content start -->
     <!-- self portrait plus self info -->
-    <div class="container-fluid text-center">
-      <div class="row bg-light bg-gradient justify-content-center align-items-center py-4 mt-5 min-vh-100">
+    <div class="container-fluid text-center" id="landing">
+      <div class="row text-light justify-content-center align-items-center py-4 mt-5 min-vh-100">
         
         <div class="col-10 col-md-3 p-4">
-          <img src="./media/albert-einstein-1100450_640.png" class="rounded-circle border border-dark img-fluid" data-aos="flip-left">
+          <img src="./media/profile photo.jpeg" class="rounded-circle border border-light img-fluid hover-effect mb-5" data-aos="flip-left" alt="">
+          <div class="row align-items-center">
+            <div class="col-4 fs-6">HTML</div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%">86%</div>
+              </div>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-4 fs-6">CSS</div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">78%</div>
+              </div>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-4 fs-6">Javascript</div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+              </div>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-4 fs-6">Python</div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100" style="width: 69%">69%</div>
+              </div>
+            </div>  
+          </div>
         </div>  
-        <div class="col-md-7 col-lg-5 text-dark">
-          <h1 class="mt-4 text-center text-md-start text-info">Hello!</h1>
+        <div class="col-md-7 col-lg-4 ps-md-5">
+          <h1 class="mt-4 text-center text-md-start text-warning">Hello!</h1>
           <h4 class="text-center text-md-start">// I'm Nathaniel Borais </h2>
           <p class="text-center text-md-start">// A full-stack developer from Manila, Ph. </p>
           <p class="text-center text-md-start">// Feel free to check out my:</p>
           <ul class="text-center list-unstyled text-md-start ms-md-5">
             <li>
-              <a href="#myProjects"><i class="bi bi-robot pe-3"></i>Projects</a>
+              <a href="#myProjects" class="link-info"><i class="bi bi-robot pe-3 link-warning"></i>Projects</a>
             </li>
             <li>
-              <a href=""><i class="bi bi-tools pe-3"></i>Tools</a>
+              <a href="#tools" class="link-info"><i class="bi bi-tools pe-3 link-warning"></i>Tools</a>
             </li>
             <li>
-              <p><a href=""><i class="bi bi-mailbox2-flag pe-3"></i></a>And <a href="">Contact</a> me on my Socials! </p>
+              <p><a href="" class="link-info"><i class="bi bi-mailbox2-flag pe-3 link-warning"></i></a>And <a href="" class="link-info">Contact</a> me on my Socials! </p>
             </li>
           </ul>
         </div>
       </div>
     </div>
+
     
     <!-- PROJECTS START -->
-    <div class="container-fluid bg-dark text-light pt-4 px-0 mx-0">
-      <h1 class="text-center mt-4" id="myProjects">Projects</h1>
+    <div class="container-fluid bg-dark text-light pt-4 px-0 mx-0" id="projects">
+      <h1 class="text-center text-warning mt-4" id="myProjects">Projects</h1>
       <div>
         <div class="row justify-content-center">
-          <div class="card col-10 col-md-3 my-5 bg-dark">
+          <div class="card col-8 col-md-3 my-5 bg-dark hover-effect">
             <img src="./media/food-tracker.png" class="card-img-top" alt="...">
             <div class="card-body text-light bg-secondary">
-              <h3 class="card-title fw-bolder text-center">DIET TRACKER</h5>
+              <h3 class="card-title fw-bolder text-center">DIET TRACKER</h3>
               <p class="card-text text-justify">A diet tracker website is a user-friendly online platform designed to help individuals monitor and manage their dietary habits. With features like food logging, nutrient tracking, and personalized goal setting, users can easily track their daily intake, make informed choices, and work towards achieving their health and fitness goals.
               </p>
             </div>
           </div>
-          <div class="card col-10 col-md-3 my-5 bg-dark" >
+          <div class="card col-8 col-md-3 my-5 bg-dark hover-effect" >
             <img src="./media/inventory-management-software.png" class="card-img-top" alt="...">
             <div class="card-body text-light bg-secondary">
-              <h3 class="card-title fw-bolder text-center">Inventory Management System</h5>
+              <h3 class="card-title fw-bolder text-center">Inventory Management System</h3>
               <p class="card-text text-justify">An inventory management website is a streamlined online platform designed to efficiently track, organize, and manage inventory for businesses. With user-friendly interfaces and robust features, the website allows businesses to monitor stock levels, track product movements, and streamline order fulfillment. 
               </p>
             </div>
           </div>
-          <div class="card col-10 col-md-3 my-5 bg-dark" >
+          <div class="card col-8 col-md-3 my-5 bg-dark hover-effect" >
             <img src="./media/Password-manager.png" class="card-img-top" alt="...">
             <div class="card-body text-light bg-secondary">
-              <h3 class="card-title fw-bolder text-center">Password Manager</h5>
+              <h3 class="card-title fw-bolder text-center">Password Manager</h3>
               <p class="card-text text-justify">A password manager is a secure and convenient solution for organizing and safeguarding your online credentials. This software securely stores and encrypts passwords, ensuring that users only need to remember a single master password to access all their accounts.  
               </p>
             </div>
@@ -122,16 +154,51 @@
     </div>
 
     <!-- TOOLS START -->
+    <div class="container-fluid"> 
+      <h1 class="text-center text-warning p-3" id="tools">Tools</h1>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-8 col-md-3 py-5 p-md-5">
+          <h2 class="text-center pb-3">Front End</h2>
+          <div class="justify-content-center align-items-center ps-4 ps-md-1 ps-xl-4">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/html5.png" class="col-5 img-fluid hover-effect-2" alt="">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/css3.png" class="col-5 img-fluid hover-effect-2" alt="">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/bs.png" class="col-5 img-fluid hover-effect-2" alt="">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/js.png" class="col-5 img-fluid hover-effect-2" alt="">
+          </div>
+        </div>
+        <div class="col-8 col-md-3 py-5 p-md-5">
+          <h2 class="text-center pb-3">Back End</h2>
+          <div class="justify-content-center align-items-center ps-4 ps-md-1 ps-xl-4">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/mongodb.png" class="col-5 img-fluid hover-effect-2" alt="">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/ejs.png" class="col-5 img-fluid hover-effect-2" alt="">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/react.png" class="col-5 img-fluid hover-effect-2" alt="">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/nodejs.png" class="col-5 img-fluid hover-effect-2" alt="">
+          </div>
+        </div>
+        <div class="col-8 col-md-3 py-5 p-md-5">
+          <h2 class="text-center pb-3">Other tools</h2>
+          <div class="justify-content-center align-items-center ps-4 ps-md-1 ps-xl-4">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/heroku.png" class="col-5 img-fluid hover-effect-2" alt="">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/git.png" class="col-5 img-fluid hover-effect-2" alt="">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/postman.png" class="col-5 img-fluid hover-effect-2" alt="">
+            <img src="https://teejaecalinao.github.io/charles-sample/images/sublime-text-3.png" class="col-5 img-fluid hover-effect-2" alt="">
+          </div>
+        </div>
 
 
+      </div>
+    </div>
 
     <!-- CONTACT START -->
+    <div>
+      <h1 class="text-center p-3 text-warning">Contacts</h1>
+    </div>
 
 
     <!-- FOOTER START -->
     <footer class="container-fluid d-flex justify-content-between align-items-center text-center text-light bg-dark bg-gradient">
       <p class="fs-6 fs-md-2 mt-2">Nathaniel Borais || Full-Stack Dev</p>
-      <p class="fs-6 mt-2 d-none d-md-block">"Digital design is like painting, except the paint never dries."</p>
+      <p class="fs-6 mt-2 d-none d-md-block hover-effect-warning">"Digital design is like painting, except the paint never dries."</p>
       <p class="fs-6 fs-md-2 mt-2">© All Rights Reserved 2024</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

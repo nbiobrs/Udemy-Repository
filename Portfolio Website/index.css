@@ -1,15 +1,18 @@
-.cards{
-
-    transition: all 0.2s ease;
-    cursor: pointer;
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px 
     
-
   }
-    
+.hover-effect-2:hover {
+    transform: scale(1.5);
+}
+.hover-effect-warning:hover{
+    color: yellow;
+}
 
-
-.cards:hover{
-
-    box-shadow: 5px 6px 6px 2px #e9ecef;
-    transform: scale(1.1);
+#landing{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./media/ZZZZZ2898.jpg');
+    min-height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
 }
